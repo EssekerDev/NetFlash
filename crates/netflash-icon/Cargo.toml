@@ -1,0 +1,19 @@
+[package]
+name = "netflash-icon"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+description = "Rasterize NetFlash tray skins from a painted color and score."
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[dependencies]
+netflash-core.workspace = true
+tiny-skia.workspace = true
+
+[dev-dependencies]
+png = "0.17"
